@@ -5,8 +5,8 @@ pipeline {
         BACKEND_DIR = 'backend/MMartHandMade/MMartHandMade'
         FRONTEND_DIR = 'frontend/MartHandMade'
         DB_SCRIPT = 'database/init.sql'
-        FRONTEND_DEST = 'C:\\wwwroot\\HandMadeMart_2_UI'
-        BACKEND_DEST = 'C:\\wwwroot\\HandMadeMart_2_API'
+        FRONTEND_DEST = 'C:\\wwwroot\\HandMadeMart_02_UI'
+        BACKEND_DEST = 'C:\\wwwroot\\HandMadeMart_02_API'
         CSPROJ_FILE = 'MMartHandMade.csproj'
     }
 
@@ -14,7 +14,7 @@ pipeline {
         stage('Clone Source Code') {
             steps {
                 echo '📥 Cloning source code...'
-                git branch: 'main', url: 'https://github.com/ZuyAnhIT/HandMadeMart_2.git'
+                git branch: 'main', url: 'https://github.com/ZuyAnhIT/HandMadeMart_02.git'
             }
         }
 
