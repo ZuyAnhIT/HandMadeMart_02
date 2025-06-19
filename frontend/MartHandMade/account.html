@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Bán Hàng</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/index.css" />
+    <link rel="stylesheet" href="Css/account.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo_black.png" alt="Logo Shop" />
+          </a>
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Sản phẩm</a></li>
+            <li class="dropdown">
+              <a href="products.html">Danh mục sản phẩm</a>
+              <div class="dropdown-content" id="categories-dropdown">
+                <div class="loading">Đang tải danh mục...</div>
+              </div>
+            </li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="search">
+            <form action="search.html" method="GET">
+              <input type="text" name="keyword" placeholder="Tìm kiếm..." />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <div class="account">
+            <a href="account.html"><i class="fas fa-user"></i></a>
+          </div>
+          <div class="cart">
+            <a href="cart.html"
+              ><i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="account">
+        <div class="container">
+          <div class="auth-container">
+            <div class="auth-tabs">
+              <button class="auth-tab active" data-tab="login">
+                Đăng nhập
+              </button>
+              <button class="auth-tab" data-tab="register">Đăng ký</button>
+            </div>
+
+            <div class="auth-content">
+              <!-- Đăng nhập Form -->
+              <form id="login-form" class="auth-form active">
+                <div class="form-group">
+                  <label for="login-name">Tên đăng nhập </label>
+                  <input type="text" id="login-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="login-password">Mật khẩu</label>
+                  <input type="password" id="login-password" required />
+                </div>
+                <div class="form-group remember-forgot">
+                  <div>
+                    <input type="checkbox" id="remember" />
+                    <label for="remember">Ghi nhớ đăng nhập</label>
+                  </div>
+                  <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="auth-button">Đăng nhập</button>
+              </form>
+              
+              <!-- Đăng ký Form -->
+              <form id="register-form" class="auth-form">
+                <div class="form-group">
+                  <label for="register-name">Họ và tên</label>
+                  <input type="text" id="register-name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="register-email">Email</label>
+                  <input type="email" id="register-email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="register-address">Địa chỉ</label>
+                  <input type="text" id="register-address" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="register-phone">Số điện thoại</label>
+                  <input type="tel" id="register-phone" required />
+                </div>
+                <div class="form-group">
+                  <label for="register-username">Tên đăng nhập</label>
+                  <input type="text" id="register-username" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="register-password">Mật khẩu</label>
+                  <input type="password" id="register-password" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="register-confirm-password"
+                    >Xác nhận mật khẩu</label
+                  >
+                  <input
+                    type="password"
+                    id="register-confirm-password"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="agree-terms" required />
+                  <label for="agree-terms"
+                    >Tôi chấp nhận với <a href="#">Điều khoản</a> và
+                    <a href="#">Chính sách</a> !!!
+                  </label>
+                </div>
+                <button type="submit" class="auth-button">Đăng ký</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Thông tin liên hệ</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                Thành phố HCM
+              </li>
+              <li><i class="fas fa-phone"></i> 0123.456.789</li>
+              <li><i class="fas fa-envelope"></i> info@shopbanhang.com</li>
+              <li>
+                <i class="fas fa-clock"></i> 8h00 - 21h00 các ngày trong tuần
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Danh mục sản phẩm</h3>
+            <div id="footer-categories" class="footer-categories">
+              <div class="loading">Đang tải danh mục...</div>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Giới thiệu</h3>
+            <p>
+              Shop Bán Hàng cung cấp các sản phẩm chất lượng cao với giá cả phải
+              chăng. Chúng tôi cam kết mang đến trải nghiệm mua sắm tốt nhất cho
+              khách hàng.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Kết nối với chúng tôi</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="payment-methods">
+              <h4>Phương thức thanh toán</h4>
+              <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Shop Bán Hàng. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/account.js"></script>
+  </body>
+</html>

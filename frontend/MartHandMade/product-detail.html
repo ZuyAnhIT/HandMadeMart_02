@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Bán Hàng</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/index.css" />
+    <link rel="stylesheet" href="Css/product-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo_black.png" alt="Logo Shop" />
+          </a>
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Sản phẩm</a></li>
+            <li class="dropdown">
+              <a href="products.html">Danh mục sản phẩm</a>
+              <div class="dropdown-content" id="categories-dropdown">
+                <div class="loading">Đang tải danh mục...</div>
+              </div>
+            </li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="search">
+            <form action="search.html" method="GET">
+              <input type="text" name="keyword" placeholder="Tìm kiếm..." />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <div class="account">
+            <a href="account.html"><i class="fas fa-user"></i></a>
+          </div>
+          <div class="cart">
+            <a href="cart.html"
+              ><i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="product-detail-container">
+          <div class="product-info">
+            <h1 id="product-name">Tên sản phẩm</h1>
+            <p id="product-description">Mô tả sản phẩm</p>
+            <p id="product-price">Giá: 0 VNĐ</p>
+            <p id="product-status">Trạng thái: Còn hàng</p>
+            <p id="product-stock">Số lượng còn: 0</p>
+            <p id="product-category">Danh mục:</p>
+            <button onclick="themVaoGioHang(event)">
+              🛒 Thêm vào giỏ hàng !
+            </button>
+
+            <!-- Nút chia sẻ -->
+            <div class="share-icons">
+              <button onclick="chiaSe('facebook')">
+                <i class="fab fa-facebook"></i>Facebook
+              </button>
+              <button onclick="chiaSe('twitter')">
+                <i class="fab fa-twitter"></i>Twitter
+              </button>
+              <button onclick="chiaSe('instagram')">
+                <i class="fab fa-instagram"></i> Instagram
+              </button>
+            </div>
+          </div>
+          <div class="product-image">
+            <img id="product-image" src="default.jpg" alt="Ảnh sản phẩm" />
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <h2>Đánh giá từ khách hàng</h2>
+        <div class="reviews-summary">
+          <div id="average-rating">
+            <span id="average-stars">0</span><span>/5</span>
+            <div class="stars-container" id="summary-stars"></div>
+          </div>
+          <div id="total-reviews">
+            <span id="reviews-count">0</span> đánh giá
+          </div>
+        </div>
+
+        <div class="reviews-slider-container">
+          <button class="slider-arrow prev" id="prev-review">❮</button>
+          <div class="reviews-slider" id="reviews-slider">
+            <!-- Đánh giá sẽ được thêm vào đây bằng JavaScript -->
+            <div class="reviews-loading">Đang tải đánh giá...</div>
+          </div>
+          <button class="slider-arrow next" id="next-review">❯</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Thông tin liên hệ</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                Thành phố HCM
+              </li>
+              <li><i class="fas fa-phone"></i> 0123.456.789</li>
+              <li><i class="fas fa-envelope"></i> info@shopbanhang.com</li>
+              <li>
+                <i class="fas fa-clock"></i> 8h00 - 21h00 các ngày trong tuần
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Danh mục sản phẩm</h3>
+            <div id="footer-categories" class="footer-categories">
+              <div class="loading">Đang tải danh mục...</div>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Giới thiệu</h3>
+            <p>
+              Shop Bán Hàng cung cấp các sản phẩm chất lượng cao với giá cả phải
+              chăng. Chúng tôi cam kết mang đến trải nghiệm mua sắm tốt nhất cho
+              khách hàng.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Kết nối với chúng tôi</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="payment-methods">
+              <h4>Phương thức thanh toán</h4>
+              <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Shop Bán Hàng. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/product-detail.js"></script>
+  </body>
+</html>

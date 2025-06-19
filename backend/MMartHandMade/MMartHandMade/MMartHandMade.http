@@ -1,0 +1,6 @@
+@MMartHandMade_HostAddress = http://localhost:5258
+
+GET {{MMartHandMade_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,173 @@
+/* Reset styles only for elements inside main */
+main * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Product Showcase Section */
+main .product-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+main .product-card {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main .product-image {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+main .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .product-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 165, 0, 0.7);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main .product-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+main .product-description {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  color: #555;
+}
+
+main .buy-button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+main .buy-button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Village Info Section */
+main .main-header {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+main .main-header h3 {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+main .main-header h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+main .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+main .left-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+main .right-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+main .image-container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+main .image-container img {
+  width: 100%;
+  max-height: 750px;
+  object-fit: cover;
+}
+
+main .section-title {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+main .section-title h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+main .section-title h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+main .feature-list {
+  margin-top: 20px;
+}
+
+main .feature-item {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+main p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  main .content-wrapper,
+  main .product-showcase {
+    flex-direction: column;
+  }
+}

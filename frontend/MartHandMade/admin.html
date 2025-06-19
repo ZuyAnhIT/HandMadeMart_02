@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="Css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo" />
+          <div class="logo-text">
+            <span class="title">ADMIN</span>
+            <span class="subtitle">STORE HAND MADE</span>
+          </div>
+        </div>
+
+        <ul class="menu">
+          <li class="active" data-page="dashboard">
+            <i class="fas fa-th-large"></i>
+            <span>Dashboard</span>
+          </li>
+
+          <li class="menu-header">HỆ THỐNG</li>
+
+          <li data-page="account-management">
+            <i class="fas fa-user-cog"></i>
+            <span>Account</span>
+            <i class="fas fa-chevron-right submenu-icon"></i>
+            <ul class="submenu">
+              <li data-subpage="personal-account">Quản lý tài khoản cá nhân</li>
+              <li data-subpage="staff-account">Quản lý tài khoản nhân viên</li>
+              <li data-subpage="customer-account">Quản lý tài khoản khách</li>
+            </ul>
+          </li>
+
+          <li class="menu-header">CỬA HÀNG</li>
+
+          <li data-page="product-management">
+            <i class="fas fa-box"></i>
+            <span>Quản lý sản phẩm</span>
+          </li>
+
+          <li data-page="category-management">
+            <i class="fas fa-list"></i>
+            <span>Quản lý danh mục</span>
+          </li>
+
+          <li data-page="order-management">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Quản lý đơn hàng</span>
+          </li>
+
+          <li data-page="review-management">
+            <i class="fas fa-star"></i>
+            <span>Quản lý đánh giá</span>
+          </li>
+
+          <li data-page="support-management">
+            <i class="fas fa-headset"></i>
+            <span>Quản lý hỗ trợ</span>
+          </li>
+
+          <li data-page="customer-management">
+            <i class="fas fa-users"></i>
+            <span>User</span>
+            <i class="fas fa-chevron-right submenu-icon"></i>
+            <ul class="submenu">
+              <li data-subpage="staff-info">Quản lý nhân viên</li>
+              <li data-subpage="customer-info">Quản lý khách</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Đăng xuất</span>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Content Area -->
+        <div class="content" id="content-area">
+          <!-- Dashboard Page -->
+          <div class="page" id="dashboard-page">
+            <div class="page-header">
+              <h1>Dashboard</h1>
+            </div>
+
+            <div class="stats-container">
+              <div class="stat-card">
+                <div class="stat-info">
+                  <div class="stat-title">DOANH THU (HÀNG THÁNG)</div>
+                  <div class="stat-value">$40,000</div>
+                </div>
+                <div class="stat-icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-info">
+                  <div class="stat-title">DOANH THU (HÀNG NĂM)</div>
+                  <div class="stat-value"></div>
+                </div>
+                <div class="stat-icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-info">
+                  <div class="stat-title">DOANH THU (HÀNG TUẦN)</div>
+                  <div class="stat-value"></div>
+                </div>
+                <div class="stat-icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="charts-container">
+              <div class="chart-card">
+                <div class="chart-header">
+                  <h3>Tổng doanh thu</h3>
+                  <div class="dropdown">
+                    <button class="filter-btn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#" data-period="week">Theo tuần</a>
+                      <a href="#" data-period="month" class="active"
+                        >Theo tháng</a
+                      >
+                      <a href="#" data-period="year">Theo năm</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-body">
+                  <canvas id="earningsChart"></canvas>
+                </div>
+              </div>
+
+              <div class="chart-card">
+                <div class="chart-header">
+                  <h3>Doanh thu dựa trên sản phẩm</h3>
+                  <div class="dropdown"></div>
+                </div>
+                <div class="chart-body">
+                  <canvas id="revenueChart"></canvas>
+                </div>
+                <div class="chart-legend">
+                  <div class="legend-item"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Account Management Pages -->
+          <div class="page hidden" id="personal-account-page">
+            <div class="page-header">
+              <h1>Quản lý tài khoản cá nhân</h1>
+            </div>
+            <div class="form-container">
+              <form id="personal-account-form">
+                <div class="form-group">
+                  <label for="username">Tên đăng nhập</label>
+                  <input type="text" id="username" name="username" readonly />
+                </div>
+                <div class="form-group">
+                  <label for="current-password">Mật khẩu hiện tại</label>
+                  <input
+                    type="password"
+                    id="current-password"
+                    name="currentPassword"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="new-password">Mật khẩu mới</label>
+                  <input
+                    type="password"
+                    id="new-password"
+                    name="newPassword"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="confirm-password">Nhập lại mật khẩu mới</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirmPassword"
+                    required
+                  />
+                </div>
+                <button type="submit" class="submit-btn">Đổi mật khẩu</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="page hidden" id="staff-account-page">
+            <div class="page-header">
+              <h1>Quản lý tài khoản nhân viên</h1>
+              <button class="add-btn" id="open-add-staff-modal">
+                <i class="fas fa-plus"></i> Thêm nhân viên
+              </button>
+            </div>
+            <div class="table-container">
+              <table id="staff-account-table">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Tên nhân viên</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Mật khẩu</th>
+                    <th>Trạng thái</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="page hidden" id="customer-account-page">
+            <div class="page-header">
+              <h1>Quản lý tài khoản khách hàng</h1>
+            </div>
+            <div class="table-container">
+              <table id="customer-account-table">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Tên khách hàng</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Mật khẩu</th>
+                    <th>Trạng thái</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Category Management Page -->
+          <div class="page hidden" id="category-management-page">
+            <div class="page-header">
+              <h1>Quản lý danh mục</h1>
+              <button class="add-btn" id="add-category-btn">
+                <i class="fas fa-plus"></i> Thêm danh mục
+              </button>
+            </div>
+            <div class="table-container">
+              <table id="category-table">
+                <thead>
+                  <tr>
+                    <th>Mã danh mục</th>
+                    <th>Tên danh mục</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Product Management Page -->
+          <div class="page hidden" id="product-management-page">
+            <div class="page-header">
+              <h1>Quản lý sản phẩm</h1>
+              <button class="add-btn" id="add-product-btn">
+                <i class="fas fa-plus"></i> Thêm sản phẩm
+              </button>
+            </div>
+            <div class="table-container">
+              <table id="product-table">
+                <thead>
+                  <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Mô tả</th>
+                    <th>Giá bán</th>
+                    <th>Số lượng tồn</th>
+                    <th>Số lượng bán</th>
+                    <th>Ảnh sản phẩm</th>
+                    <th>Trạng thái</th>
+                    <th>Ngày tạo</th>
+                    <th>Danh mục</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Order Management Page -->
+          <div class="page hidden" id="order-management-page">
+            <div class="page-header">
+              <h1>Quản lý đơn hàng</h1>
+            </div>
+            <div class="table-container">
+              <table id="order-table">
+                <thead>
+                  <tr>
+                    <th>Mã đơn hàng</th>
+                    <th>Khách hàng</th>
+                    <th>Ngày đặt</th>
+                    <th>Tổng tiền</th>
+                    <th>Trạng thái</th>
+                    <th>Nhân viên phụ trách</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Review Management Page -->
+          <div class="page hidden" id="review-management-page">
+            <div class="page-header">
+              <h1>Quản lý đánh giá</h1>
+            </div>
+            <div class="table-container">
+              <table id="review-table">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Khách hàng</th>
+                    <th>Số sao</th>
+                    <th>Bình luận</th>
+                    <th>Ngày đánh giá</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="page hidden" id="support-management-page">
+            <div class="page-header">
+              <h1>Quản lý yêu cầu hỗ trợ</h1>
+            </div>
+            <div class="table-container">
+              <table id="support-table">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Tên khách hàng</th>
+                    <th>SĐT</th>
+                    <th>Email</th>
+                    <th>Nội dung</th>
+                    <th>Trạng thái</th>
+                    <th>Nhân viên</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Staff Management Page -->
+          <div class="page hidden" id="staff-info-page">
+            <div class="page-header">
+              <h1>Quản lý nhân viên</h1>
+            </div>
+            <div class="table-container">
+              <table id="staff-table">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Tên nhân viên</th>
+                    <th>Số điện thoại</th>
+                    <th>Email</th>
+                    <th>Địa chỉ</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Customer Info Page -->
+          <div class="page hidden" id="customer-info-page">
+            <div class="page-header">
+              <h1>Quản lý khách hàng</h1>
+            </div>
+            <div class="table-container">
+              <table id="customer-info-table">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Tên khách hàng</th>
+                    <th>Số điện thoại</th>
+                    <th>Email</th>
+                    <th>Địa chỉ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be loaded by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/a-account.js"></script>
+    <script src="js/a-category.js"></script>
+    <script src="js/a-product.js"></script>
+    <script src="js/a-dashboard.js"></script>
+    <script src="js/a-order.js"></script>
+    <script src="js/a-user.js"></script>
+    <script src="js/review.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/support.js"></script>
+  </body>
+</html>

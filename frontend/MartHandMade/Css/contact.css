@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Contact Info Styles */
+/* Contact Info Styles */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.info-item {
+  display: flex;
+  width: 24%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-content h3 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.info-content p {
+  font-size: 14px;
+  color: #333;
+}
+
+.info-item:hover {
+  transform: translateY(-5px); /* Di chuyển nhẹ lên khi hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Tăng bóng đổ khi hover */
+  background-color: #dee48e; /* Thay đổi màu nền khi hover */
+}
+
+.contact-info .info-item:hover .icon {
+  filter: brightness(0) invert(1); /* Làm cho biểu tượng sáng hơn khi hover */
+}
+
+/* Contact Form and Map Container */
+.contact-form-container,
+.map-container {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  color: #888;
+  transition: background-color 0.3s ease;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.form-group:hover {
+  transform: scale(1.02); /* Phóng to nhẹ khi hover */
+  background-color: #e6e6e6; /* Màu nền nhẹ khi hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+}
+
+.form-group:hover label {
+  background-color: #c59d5f; /* Màu nền thay đổi khi hover */
+  color: white; /* Màu chữ thay đổi khi hover */
+}
+
+.form-note {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
+  font-style: italic;
+  transition: transform 0.3s ease;
+}
+
+.form-note:hover {
+  transform: translateY(-3px); /* Di chuyển nhẹ lên khi hover */
+  color: #333; /* Thay đổi màu chữ khi hover */
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn,
+.reset-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #c59d5f;
+  color: white;
+  font-weight: bold;
+}
+
+.reset-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.submit-btn:hover {
+  background-color: #b18a4b; /* Màu nền tối hơn khi hover */
+  transform: scale(1.05); /* Tăng kích thước nút nhẹ */
+}
+
+.reset-btn:hover {
+  background-color: #e0e0e0; /* Màu nền tối hơn khi hover */
+  transform: scale(1.05); /* Tăng kích thước nút nhẹ */
+}
+
+/* Map Styles */
+.map-container {
+  height: 370px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-container:hover {
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ khi hover */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.map-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  z-index: 10;
+  margin-top: 120px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.map-info:hover {
+  transform: translateY(-5px); /* Di chuyển lên khi hover */
+  background-color: #f9f9f9; /* Thay đổi màu nền khi hover */
+}
+
+.map-info h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.map-info p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.map-info:hover h3 {
+  color: #c59d5f; /* Thay đổi màu tiêu đề khi hover */
+}
+
+.view-reviews {
+  display: inline-block;
+  font-size: 12px;
+  color: #4285f4;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .info-item {
+    width: 48%;
+  }
+
+  .contact-form-container,
+  .map-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-item {
+    width: 100%;
+  }
+}

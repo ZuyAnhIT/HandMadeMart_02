@@ -1,0 +1,1650 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MMartHandMade",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/BaoCaoThongKe/ThongKeDoanhThuTheoThoiGian": {
+      "post": {
+        "tags": [
+          "BaoCaoThongKe"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "loaiThongKe": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "loaiThongKe": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BaoCaoThongKe/ThongKeTopSanPham": {
+      "post": {
+        "tags": [
+          "BaoCaoThongKe"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "loaiThongKe": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "loaiThongKe": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/taiKhoan/dangKy": {
+      "post": {
+        "tags": [
+          "DangKy"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "DiaChi",
+                  "Email",
+                  "HoTen",
+                  "MatKhau",
+                  "NhapLaiMatKhau",
+                  "SoDienThoai",
+                  "TenDangNhap"
+                ],
+                "type": "object",
+                "properties": {
+                  "Email": {
+                    "type": "string"
+                  },
+                  "SoDienThoai": {
+                    "type": "string"
+                  },
+                  "HoTen": {
+                    "type": "string"
+                  },
+                  "DiaChi": {
+                    "type": "string"
+                  },
+                  "TenDangNhap": {
+                    "type": "string"
+                  },
+                  "MatKhau": {
+                    "type": "string"
+                  },
+                  "NhapLaiMatKhau": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Email": {
+                  "style": "form"
+                },
+                "SoDienThoai": {
+                  "style": "form"
+                },
+                "HoTen": {
+                  "style": "form"
+                },
+                "DiaChi": {
+                  "style": "form"
+                },
+                "TenDangNhap": {
+                  "style": "form"
+                },
+                "MatKhau": {
+                  "style": "form"
+                },
+                "NhapLaiMatKhau": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/taiKhoan/dangNhap": {
+      "post": {
+        "tags": [
+          "DangNhap"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "TenDangNhap": {
+                    "type": "string"
+                  },
+                  "MatKhau": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "TenDangNhap": {
+                  "style": "form"
+                },
+                "MatKhau": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhgia/ThemDanhGia": {
+      "post": {
+        "tags": [
+          "DanhGia"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "MaSanPham": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "SoSao": {
+                    "maximum": 5,
+                    "minimum": 1,
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "BinhLuan": {
+                    "maxLength": 500,
+                    "minLength": 0,
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "MaSanPham": {
+                  "style": "form"
+                },
+                "SoSao": {
+                  "style": "form"
+                },
+                "BinhLuan": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhgia/Danhsachdanhgia": {
+      "get": {
+        "tags": [
+          "DanhGia"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhgia/SanPham/{maSanPham}": {
+      "get": {
+        "tags": [
+          "DanhGia"
+        ],
+        "parameters": [
+          {
+            "name": "maSanPham",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhgia/Xoa/{maDanhGia}": {
+      "delete": {
+        "tags": [
+          "DanhGia"
+        ],
+        "parameters": [
+          {
+            "name": "maDanhGia",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhmucsanpham/LayDanhSach": {
+      "get": {
+        "tags": [
+          "DanhMucSanPham"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhmucsanpham/LayDanhSachChiTiet": {
+      "get": {
+        "tags": [
+          "DanhMucSanPham"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhmucsanpham/ThemDanhMuc": {
+      "post": {
+        "tags": [
+          "DanhMucSanPham"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "TenDanhMuc": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "TenDanhMuc": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhmucsanpham/CapNhat/{maDanhMuc}": {
+      "put": {
+        "tags": [
+          "DanhMucSanPham"
+        ],
+        "parameters": [
+          {
+            "name": "maDanhMuc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "TenDanhMuc": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "TenDanhMuc": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/danhmucsanpham/Xoa/{maDanhMuc}": {
+      "delete": {
+        "tags": [
+          "DanhMucSanPham"
+        ],
+        "parameters": [
+          {
+            "name": "maDanhMuc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DonHang/DanhSachDonHang": {
+      "get": {
+        "tags": [
+          "DonHang"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DonHang/AllDanhSach": {
+      "get": {
+        "tags": [
+          "DonHang"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DonHang/ChiTiet/{maDonHang}": {
+      "get": {
+        "tags": [
+          "DonHang"
+        ],
+        "parameters": [
+          {
+            "name": "maDonHang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DonHang/DanhSachCaNhan": {
+      "get": {
+        "tags": [
+          "DonHang"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DonHang/HuyDonHang/{maDonHang}": {
+      "put": {
+        "tags": [
+          "DonHang"
+        ],
+        "parameters": [
+          {
+            "name": "maDonHang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DonHang/CapNhatTrangThai/{maDonHang}": {
+      "put": {
+        "tags": [
+          "DonHang"
+        ],
+        "parameters": [
+          {
+            "name": "maDonHang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "trangThaiMoi": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "trangThaiMoi": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DonHang/ThemDonHang": {
+      "post": {
+        "tags": [
+          "DonHang"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DonHangRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DonHangRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DonHangRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoTro/ThemHoTro": {
+      "post": {
+        "tags": [
+          "HoTro"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tenKhachHang": {
+                    "type": "string"
+                  },
+                  "soDienThoai": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "noiDung": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "tenKhachHang": {
+                  "style": "form"
+                },
+                "soDienThoai": {
+                  "style": "form"
+                },
+                "email": {
+                  "style": "form"
+                },
+                "noiDung": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoTro/DanhSachHoTro": {
+      "get": {
+        "tags": [
+          "HoTro"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoTro/CapNhatTrangThai/{maLienHe}": {
+      "put": {
+        "tags": [
+          "HoTro"
+        ],
+        "parameters": [
+          {
+            "name": "maLienHe",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "trangThaiMoi": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "trangThaiMoi": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoTro/Xoa/{maLienHe}": {
+      "delete": {
+        "tags": [
+          "HoTro"
+        ],
+        "parameters": [
+          {
+            "name": "maLienHe",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhachHang/LayCaNhanKhachHang": {
+      "get": {
+        "tags": [
+          "KhachHang"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhachHang/LayKhachHang": {
+      "get": {
+        "tags": [
+          "KhachHang"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhachHang/CapNhat": {
+      "put": {
+        "tags": [
+          "KhachHang"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "HoTenKhachHang": {
+                    "type": "string"
+                  },
+                  "DiaChiKhach": {
+                    "type": "string"
+                  },
+                  "EmailKhach": {
+                    "type": "string"
+                  },
+                  "SoDienThoaiKhach": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "HoTenKhachHang": {
+                  "style": "form"
+                },
+                "DiaChiKhach": {
+                  "style": "form"
+                },
+                "EmailKhach": {
+                  "style": "form"
+                },
+                "SoDienThoaiKhach": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NhanVien/LayCaNhanNhanVien": {
+      "get": {
+        "tags": [
+          "NhanVien"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NhanVien/LayNhanVien": {
+      "get": {
+        "tags": [
+          "NhanVien"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NhanVien/ThemNhanVien": {
+      "post": {
+        "tags": [
+          "NhanVien"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "HoTenNhanVien": {
+                    "type": "string"
+                  },
+                  "DiaChiNhanVien": {
+                    "type": "string"
+                  },
+                  "EmailNhanVien": {
+                    "type": "string"
+                  },
+                  "SoDienThoaiNhanVien": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "HoTenNhanVien": {
+                  "style": "form"
+                },
+                "DiaChiNhanVien": {
+                  "style": "form"
+                },
+                "EmailNhanVien": {
+                  "style": "form"
+                },
+                "SoDienThoaiNhanVien": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NhanVien/CapNhatCaNhan": {
+      "put": {
+        "tags": [
+          "NhanVien"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "HoTenNhanVien": {
+                    "type": "string"
+                  },
+                  "DiaChiNhanVien": {
+                    "type": "string"
+                  },
+                  "EmailNhanVien": {
+                    "type": "string"
+                  },
+                  "SoDienThoaiNhanVien": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "HoTenNhanVien": {
+                  "style": "form"
+                },
+                "DiaChiNhanVien": {
+                  "style": "form"
+                },
+                "EmailNhanVien": {
+                  "style": "form"
+                },
+                "SoDienThoaiNhanVien": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NhanVien/CapNhat/{maNhanVien}": {
+      "put": {
+        "tags": [
+          "NhanVien"
+        ],
+        "parameters": [
+          {
+            "name": "maNhanVien",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "HoTenNhanVien": {
+                    "type": "string"
+                  },
+                  "DiaChiNhanVien": {
+                    "type": "string"
+                  },
+                  "EmailNhanVien": {
+                    "type": "string"
+                  },
+                  "SoDienThoaiNhanVien": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "HoTenNhanVien": {
+                  "style": "form"
+                },
+                "DiaChiNhanVien": {
+                  "style": "form"
+                },
+                "EmailNhanVien": {
+                  "style": "form"
+                },
+                "SoDienThoaiNhanVien": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/QuanLy/ThongTinQuanLy": {
+      "get": {
+        "tags": [
+          "QuanLy"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/QuanLy/CapNhat": {
+      "put": {
+        "tags": [
+          "QuanLy"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "HoTen"
+                ],
+                "type": "object",
+                "properties": {
+                  "HoTen": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "HoTen": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanpham/LayDanhSach": {
+      "get": {
+        "tags": [
+          "SanPham"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanpham/LaySanPham/{maSanPham}": {
+      "get": {
+        "tags": [
+          "SanPham"
+        ],
+        "parameters": [
+          {
+            "name": "maSanPham",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanpham/TimKiemSanPham": {
+      "post": {
+        "tags": [
+          "SanPham"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tenSanPham": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "tenSanPham": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanpham/ThemSanPham": {
+      "post": {
+        "tags": [
+          "SanPham"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "TenSanPham": {
+                    "type": "string"
+                  },
+                  "MoTa": {
+                    "type": "string"
+                  },
+                  "AnhSanPham": {
+                    "type": "string"
+                  },
+                  "SoLuongTon": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "SoLuongBan": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "GiaBan": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "TrangThai": {
+                    "type": "string"
+                  },
+                  "MaDanhMuc": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "TenDanhMuc": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "TenSanPham": {
+                  "style": "form"
+                },
+                "MoTa": {
+                  "style": "form"
+                },
+                "AnhSanPham": {
+                  "style": "form"
+                },
+                "SoLuongTon": {
+                  "style": "form"
+                },
+                "SoLuongBan": {
+                  "style": "form"
+                },
+                "GiaBan": {
+                  "style": "form"
+                },
+                "TrangThai": {
+                  "style": "form"
+                },
+                "MaDanhMuc": {
+                  "style": "form"
+                },
+                "TenDanhMuc": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanpham/CapNhat/{maSanPham}": {
+      "put": {
+        "tags": [
+          "SanPham"
+        ],
+        "parameters": [
+          {
+            "name": "maSanPham",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "TenSanPham": {
+                    "type": "string"
+                  },
+                  "MoTa": {
+                    "type": "string"
+                  },
+                  "AnhSanPham": {
+                    "type": "string"
+                  },
+                  "SoLuongTon": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "SoLuongBan": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "GiaBan": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "TrangThai": {
+                    "type": "string"
+                  },
+                  "MaDanhMuc": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "TenDanhMuc": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "TenSanPham": {
+                  "style": "form"
+                },
+                "MoTa": {
+                  "style": "form"
+                },
+                "AnhSanPham": {
+                  "style": "form"
+                },
+                "SoLuongTon": {
+                  "style": "form"
+                },
+                "SoLuongBan": {
+                  "style": "form"
+                },
+                "GiaBan": {
+                  "style": "form"
+                },
+                "TrangThai": {
+                  "style": "form"
+                },
+                "MaDanhMuc": {
+                  "style": "form"
+                },
+                "TenDanhMuc": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/LayTaiKhoanKhachHang": {
+      "get": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/LayTaiKhoanNhanVien": {
+      "get": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/LayTaiKhoanQuanLy": {
+      "get": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/LayDanhSachTaiKhoanNhanVien": {
+      "get": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/LayDanhSachTaiKhoanKhachHang": {
+      "get": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/ThemTaiKhoanNhanVien": {
+      "post": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "DiaChi",
+                  "Email",
+                  "HoTen",
+                  "MatKhau",
+                  "NhapLaiMatKhau",
+                  "SoDienThoai",
+                  "TenDangNhap"
+                ],
+                "type": "object",
+                "properties": {
+                  "Email": {
+                    "type": "string"
+                  },
+                  "SoDienThoai": {
+                    "type": "string"
+                  },
+                  "HoTen": {
+                    "type": "string"
+                  },
+                  "DiaChi": {
+                    "type": "string"
+                  },
+                  "TenDangNhap": {
+                    "type": "string"
+                  },
+                  "MatKhau": {
+                    "type": "string"
+                  },
+                  "NhapLaiMatKhau": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Email": {
+                  "style": "form"
+                },
+                "SoDienThoai": {
+                  "style": "form"
+                },
+                "HoTen": {
+                  "style": "form"
+                },
+                "DiaChi": {
+                  "style": "form"
+                },
+                "TenDangNhap": {
+                  "style": "form"
+                },
+                "MatKhau": {
+                  "style": "form"
+                },
+                "NhapLaiMatKhau": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/CapNhatTaiKhoan": {
+      "put": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "TenDangNhap": {
+                    "type": "string"
+                  },
+                  "MatKhauCu": {
+                    "type": "string"
+                  },
+                  "MatKhau": {
+                    "type": "string"
+                  },
+                  "NhapLaiMatKhau": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "TenDangNhap": {
+                  "style": "form"
+                },
+                "MatKhauCu": {
+                  "style": "form"
+                },
+                "MatKhau": {
+                  "style": "form"
+                },
+                "NhapLaiMatKhau": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/capnhattrangthainhanvien/{maNhanVien}": {
+      "put": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "parameters": [
+          {
+            "name": "maNhanVien",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiKhoan/capnhattrangthaikhachhang/{maKhachHang}": {
+      "put": {
+        "tags": [
+          "TaiKhoan"
+        ],
+        "parameters": [
+          {
+            "name": "maKhachHang",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ChiTietDonHangRequest": {
+        "type": "object",
+        "properties": {
+          "maSanPham": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "soLuong": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "giaBan": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DonHangRequest": {
+        "type": "object",
+        "properties": {
+          "diaChiGiaoHang": {
+            "type": "string",
+            "nullable": true
+          },
+          "soDienThoai": {
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietDonHangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiTietDonHangRequest"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

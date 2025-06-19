@@ -1,0 +1,74 @@
+/* 📌 Tổng thể trang */
+#staff-info-page {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 📌 Tiêu đề */
+#staff-info-page .page-header h1 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 📌 Form nhập */
+#staff-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 📌 Nhãn */
+#staff-info-form label {
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 📌 Ô nhập */
+#staff-info-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease-in-out;
+}
+
+#staff-info-form input:focus {
+  border: 1px solid #3498db;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5);
+}
+
+/* 📌 Nút lưu */
+#staff-info-form button {
+  background: #3498db;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+#staff-info-form button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* 📌 Responsive */
+@media (max-width: 600px) {
+  #staff-info-page {
+    width: 90%;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,993 @@
+[
+  {
+    "ContainingType": "MMartHandMade.Controllers.BaoCaoThongKeController",
+    "Method": "ThongKeDoanhThu",
+    "RelativePath": "api/BaoCaoThongKe/ThongKeDoanhThuTheoThoiGian",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loaiThongKe",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.BaoCaoThongKeController",
+    "Method": "ThongKeTopSanPham",
+    "RelativePath": "api/BaoCaoThongKe/ThongKeTopSanPham",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loaiThongKe",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhGiaController",
+    "Method": "LayTatCaDanhGia",
+    "RelativePath": "api/danhgia/Danhsachdanhgia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhGiaController",
+    "Method": "LayDanhGiaTheoSanPham",
+    "RelativePath": "api/danhgia/SanPham/{maSanPham}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maSanPham",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhGiaController",
+    "Method": "ThemDanhGia",
+    "RelativePath": "api/danhgia/ThemDanhGia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaSanPham",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoSao",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "BinhLuan",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhGiaController",
+    "Method": "XoaDanhGia",
+    "RelativePath": "api/danhgia/Xoa/{maDanhGia}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDanhGia",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhMucSanPhamController",
+    "Method": "UpdateDanhMucSanPham",
+    "RelativePath": "api/danhmucsanpham/CapNhat/{maDanhMuc}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDanhMuc",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "TenDanhMuc",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhMucSanPhamController",
+    "Method": "GetAll",
+    "RelativePath": "api/danhmucsanpham/LayDanhSach",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhMucSanPhamController",
+    "Method": "GetAllDetals",
+    "RelativePath": "api/danhmucsanpham/LayDanhSachChiTiet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhMucSanPhamController",
+    "Method": "AddDanhMucSanPham",
+    "RelativePath": "api/danhmucsanpham/ThemDanhMuc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TenDanhMuc",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DanhMucSanPhamController",
+    "Method": "DeleteDanhMucSanPham",
+    "RelativePath": "api/danhmucsanpham/Xoa/{maDanhMuc}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDanhMuc",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DonHangController",
+    "Method": "GetDonHangs",
+    "RelativePath": "api/DonHang/AllDanhSach",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DonHangController",
+    "Method": "CapNhatTrangThai",
+    "RelativePath": "api/DonHang/CapNhatTrangThai/{maDonHang}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonHang",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "trangThaiMoi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DonHangController",
+    "Method": "GetChiTietDonHang",
+    "RelativePath": "api/DonHang/ChiTiet/{maDonHang}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonHang",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DonHangController",
+    "Method": "GetDonHangsByKhachHang",
+    "RelativePath": "api/DonHang/DanhSachCaNhan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DonHangController",
+    "Method": "GetDanhSachDonHangs",
+    "RelativePath": "api/DonHang/DanhSachDonHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DonHangController",
+    "Method": "HuyDonHang",
+    "RelativePath": "api/DonHang/HuyDonHang/{maDonHang}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonHang",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DonHangController",
+    "Method": "ThemDonHang",
+    "RelativePath": "api/DonHang/ThemDonHang",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MMartHandMade.Controllers.DonHangRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.HoTroController",
+    "Method": "CapNhatTrangThai",
+    "RelativePath": "api/HoTro/CapNhatTrangThai/{maLienHe}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maLienHe",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "trangThaiMoi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.HoTroController",
+    "Method": "LayTatCaHoTro",
+    "RelativePath": "api/HoTro/DanhSachHoTro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.HoTroController",
+    "Method": "ThemHoTro",
+    "RelativePath": "api/HoTro/ThemHoTro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenKhachHang",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "soDienThoai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noiDung",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.HoTroController",
+    "Method": "XoaHoTro",
+    "RelativePath": "api/HoTro/Xoa/{maLienHe}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maLienHe",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.KhachHangController",
+    "Method": "UpdateQuanLy",
+    "RelativePath": "api/KhachHang/CapNhat",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HoTenKhachHang",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChiKhach",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailKhach",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoDienThoaiKhach",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.KhachHangController",
+    "Method": "GetCaNhan",
+    "RelativePath": "api/KhachHang/LayCaNhanKhachHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.KhachHangController",
+    "Method": "GetKhachHang",
+    "RelativePath": "api/KhachHang/LayKhachHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.NhanVienController",
+    "Method": "UpdateNhanVien",
+    "RelativePath": "api/NhanVien/CapNhat/{maNhanVien}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maNhanVien",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "HoTenNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChiNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoDienThoaiNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.NhanVienController",
+    "Method": "UpdateQuanLy",
+    "RelativePath": "api/NhanVien/CapNhatCaNhan",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HoTenNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChiNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoDienThoaiNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.NhanVienController",
+    "Method": "GetCaNhan",
+    "RelativePath": "api/NhanVien/LayCaNhanNhanVien",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.NhanVienController",
+    "Method": "GetNhanVien",
+    "RelativePath": "api/NhanVien/LayNhanVien",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.NhanVienController",
+    "Method": "AddNhanVien",
+    "RelativePath": "api/NhanVien/ThemNhanVien",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HoTenNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChiNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoDienThoaiNhanVien",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.QuanLyController",
+    "Method": "UpdateQuanLy",
+    "RelativePath": "api/QuanLy/CapNhat",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HoTen",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.QuanLyController",
+    "Method": "GetQuanLy",
+    "RelativePath": "api/QuanLy/ThongTinQuanLy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.SanPhamController",
+    "Method": "Update2SanPham",
+    "RelativePath": "api/sanpham/CapNhat/{maSanPham}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maSanPham",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "TenSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MoTa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnhSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoLuongTon",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoLuongBan",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "GiaBan",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TrangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaDanhMuc",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TenDanhMuc",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.SanPhamController",
+    "Method": "GetSanPhams",
+    "RelativePath": "api/sanpham/LayDanhSach",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.SanPhamController",
+    "Method": "GetSanPhamTheoMa",
+    "RelativePath": "api/sanpham/LaySanPham/{maSanPham}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maSanPham",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.SanPhamController",
+    "Method": "Add2SanPham",
+    "RelativePath": "api/sanpham/ThemSanPham",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TenSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MoTa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnhSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoLuongTon",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoLuongBan",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "GiaBan",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TrangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaDanhMuc",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TenDanhMuc",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.SanPhamController",
+    "Method": "TimKiemSanPham",
+    "RelativePath": "api/sanpham/TimKiemSanPham",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "CapNhatTaiKhoan",
+    "RelativePath": "api/TaiKhoan/CapNhatTaiKhoan",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TenDangNhap",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MatKhauCu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MatKhau",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NhapLaiMatKhau",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "CapNhatTrangThaiKhachHang",
+    "RelativePath": "api/TaiKhoan/capnhattrangthaikhachhang/{maKhachHang}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maKhachHang",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "CapNhatTrangThaiNhanVien",
+    "RelativePath": "api/TaiKhoan/capnhattrangthainhanvien/{maNhanVien}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maNhanVien",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.DangKyController",
+    "Method": "DangKy",
+    "RelativePath": "api/taiKhoan/dangKy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoDienThoai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HoTen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TenDangNhap",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MatKhau",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NhapLaiMatKhau",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DangNhapController",
+    "Method": "Login",
+    "RelativePath": "api/taiKhoan/dangNhap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TenDangNhap",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MatKhau",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "GetTaiKhoanKhachHang",
+    "RelativePath": "api/TaiKhoan/LayDanhSachTaiKhoanKhachHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "GetTaiKhoanNhanVien",
+    "RelativePath": "api/TaiKhoan/LayDanhSachTaiKhoanNhanVien",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "GetKhachHangInfo",
+    "RelativePath": "api/TaiKhoan/LayTaiKhoanKhachHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "GetNhanVienInfo",
+    "RelativePath": "api/TaiKhoan/LayTaiKhoanNhanVien",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "GetQuanLyInfo",
+    "RelativePath": "api/TaiKhoan/LayTaiKhoanQuanLy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.TaiKhoanController",
+    "Method": "ThemNhanVien",
+    "RelativePath": "api/TaiKhoan/ThemTaiKhoanNhanVien",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SoDienThoai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HoTen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TenDangNhap",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MatKhau",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NhapLaiMatKhau",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MMartHandMade.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MMartHandMade.WeatherForecast, MMartHandMade, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Bán Hàng</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo_black.png" alt="Logo Shop" />
+          </a>
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Sản phẩm</a></li>
+            <li class="dropdown">
+              <a href="products.html">Danh mục sản phẩm</a>
+              <div class="dropdown-content" id="categories-dropdown">
+                <div class="loading">Đang tải danh mục...</div>
+              </div>
+            </li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="search">
+            <form action="search.html" method="GET">
+              <input type="text" name="keyword" placeholder="Tìm kiếm..." />
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <div class="account">
+            <a href="account.html"><i class="fas fa-user"></i></a>
+          </div>
+          <div class="cart">
+            <a href="cart.html"
+              ><i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="slider-container">
+      <div class="slider" id="mainSlider">
+        <div class="slide" style="background-image: url('img/Capture1.PNG')">
+          <div class="slide-content">
+            <h2>Khuyến mãi mùa hè</h2>
+            <p>Giảm giá đến 50% cho các sản phẩm hot nhất mùa hè này</p>
+            <a href="sales.html" class="btn">Xem ngay</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('img/Capture2.PNG')">
+          <div class="slide-content">
+            <h2>Bộ sưu tập mới</h2>
+            <p>Khám phá bộ sưu tập mới nhất với nhiều sản phẩm độc đáo</p>
+            <a href="new-collection.html" class="btn">Khám phá</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-arrow prev-slide" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="slider-arrow next-slide" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="slider-controls" id="sliderDots">
+        <div class="slider-dot active" onclick="goToSlide(0)"></div>
+        <div class="slider-dot" onclick="goToSlide(1)"></div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Phần giới thiệu với 4 ảnh và text -->
+      <section class="features">
+        <div class="container">
+          <h2 class="section-title">Tại sao chọn chúng tôi?</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src="/img/banners/service-promo-4.png" alt="Chất lượng" />
+              </div>
+              <h3>Sản phẩm chất lượng</h3>
+              <p>
+                Chúng tôi cam kết cung cấp các sản phẩm có chất lượng tốt nhất
+                cho khách hàng.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src="/img/banners/service-promo-7.png" alt="Giá cả" />
+              </div>
+              <h3>Giá cả hợp lý</h3>
+              <p>
+                Giá sản phẩm luôn được chúng tôi tối ưu để phù hợp với mọi khách
+                hàng.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src="/img/banners/service-promo-5.png" alt="Giao hàng" />
+              </div>
+              <h3>Giao hàng nhanh chóng</h3>
+              <p>
+                Dịch vụ giao hàng nhanh chóng, đảm bảo sản phẩm đến tay bạn
+                trong thời gian sớm nhất.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src="/img/banners/service-promo-2.png" alt="Hỗ trợ" />
+              </div>
+              <h3>Hỗ trợ 24/7</h3>
+              <p>
+                Đội ngũ hỗ trợ luôn sẵn sàng giải đáp mọi thắc mắc của bạn mọi
+                lúc mọi nơi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="danh-muc">
+          <h2>Sản phẩm mới</h2>
+          <div id="sanPhamMoi"></div>
+        </div>
+
+        <div class="danh-muc">
+          <h2>Sản phẩm bán chạy</h2>
+          <div id="sanPhamBanChay"></div>
+        </div>
+      </section>
+
+      <!-- Lời chào, lời chúc -->
+      <section class="message">
+        <div class="container">
+          <div class="message-content">
+            <h2>Cảm ơn quý khách đã tin tưởng chúng tôi</h2>
+            <p>
+              Chúng tôi luôn nỗ lực không ngừng để mang đến những sản phẩm chất
+              lượng và dịch vụ tốt nhất đến với quý khách. Sự hài lòng của quý
+              khách là niềm vinh hạnh và động lực để chúng tôi tiếp tục phát
+              triển.
+            </p>
+            <p>
+              Kính chúc quý khách có những trải nghiệm mua sắm tuyệt vời tại cửa
+              hàng của chúng tôi!
+            </p>
+            <div class="signature">
+              <span>- Ban quản lý Shop Bán Hàng -</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Thông tin liên hệ</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                Thành phố HCM
+              </li>
+              <li><i class="fas fa-phone"></i> 0123.456.789</li>
+              <li><i class="fas fa-envelope"></i> info@shopbanhang.com</li>
+              <li>
+                <i class="fas fa-clock"></i> 8h00 - 21h00 các ngày trong tuần
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Danh mục sản phẩm</h3>
+            <div id="footer-categories" class="footer-categories">
+              <div class="loading">Đang tải danh mục...</div>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Giới thiệu</h3>
+            <p>
+              Shop Bán Hàng cung cấp các sản phẩm chất lượng cao với giá cả phải
+              chăng. Chúng tôi cam kết mang đến trải nghiệm mua sắm tốt nhất cho
+              khách hàng.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Kết nối với chúng tôi</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="payment-methods">
+              <h4>Phương thức thanh toán</h4>
+              <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Shop Bán Hàng. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

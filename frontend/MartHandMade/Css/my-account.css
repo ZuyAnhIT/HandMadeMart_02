@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-item.active {
+  background-color: #b59865;
+  color: #fff;
+}
+
+/* Content Styles */
+.content {
+  flex: 1;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin: 25px 0 15px;
+  color: #333;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+input:focus {
+  border-color: #b59865;
+}
+
+.form-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+/* Buttons */
+.btn-save {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #45a049;
+}
+
+.btn-logout {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-logout:hover {
+  background-color: #d32f2f;
+}
+
+/* Orders Section */
+.orders-container {
+  margin-top: 20px;
+}
+
+.order-item {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.order-header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.order-content {
+  padding: 15px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: #f2f2f2;
+}
+
+.order-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.total-label {
+  font-weight: bold;
+  text-align: right !important;
+}
+
+.total-value {
+  font-weight: bold;
+}
+
+.order-status {
+  background-color: #f2f2f2;
+  text-align: center !important;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Password Change Section */
+.password-change-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Error & Success Messages */
+.error-message {
+  color: #f44336;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ffebee;
+  border-radius: 4px;
+  border-left: 4px solid #f44336;
+}
+
+.success-message {
+  color: #4caf50;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+  border-left: 4px solid #4caf50;
+}
+/*Css Đơn hàng */
+.order-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.order-status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.status-delivered {
+  background-color: #d4edda;
+  color: #155724;
+}
+.status-canceled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.status-waiting {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.cancel-order-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.cancel-order-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* Css Đánh giá */
+/* CSS cho nút đánh giá */
+.btn-rate {
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-rate:hover {
+  background-color: #45a049;
+}
+
+.btn-rate.disabled {
+  background-color: #cccccc;
+  cursor: default;
+}
+
+/* CSS cho modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* CSS cho form đánh giá */
+#ratingForm {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-cancel {
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* CSS cho star rating */
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+
+.star-rating input {
+  opacity: 0;
+  width: 1em;
+  height: 1.5em;
+  position: relative;
+  left: -10000px;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  width: 1.1em;
+  height: 1.5em;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.star-rating label:before {
+  content: "★";
+}
+
+.star-rating input:checked ~ label {
+  color: #ffd700;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffed85;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .order-table {
+    font-size: 14px;
+  }
+}
+/*Bổ sung */
+
+@media (max-width: 576px) {
+  .order-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

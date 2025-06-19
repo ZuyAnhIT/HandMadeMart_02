@@ -1,0 +1,204 @@
+/* Container chính */
+main .container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+main h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+main h3 {
+  color: #333;
+  margin: 30px 0 15px;
+  font-size: 18px;
+}
+
+/* Bảng giỏ hàng */
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+main th,
+main td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+main th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Tổng tiền */
+main .total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+/* Form thông tin nhận hàng */
+main .form-group {
+  margin-bottom: 15px;
+}
+
+main label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+main input,
+main select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+main input:focus,
+main select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+main .payment-method {
+  margin-bottom: 25px;
+}
+
+/* Nút thanh toán */
+main button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+main button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+main button:active {
+  transform: translateY(0);
+}
+
+/* Điều khiển số lượng */
+main .quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+main .quantity-btn {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  padding: 0;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0 3px;
+}
+
+main .quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+main .quantity-btn:disabled {
+  background-color: #f9f9f9;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+main .quantity-input {
+  width: 35px;
+  height: 24px;
+  text-align: center;
+  padding: 0 3px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Loại bỏ nút tăng giảm mặc định của input number */
+main .quantity-input::-webkit-inner-spin-button,
+main .quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Nút xóa sản phẩm */
+main .remove-btn {
+  background-color: #ff5252;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: auto;
+  display: inline-block;
+}
+
+main .remove-btn:hover {
+  background-color: #ff1a1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main .container {
+    padding: 15px;
+  }
+
+  main th,
+  main td {
+    padding: 8px 10px;
+  }
+
+  main th:nth-child(2),
+  main td:nth-child(2),
+  main th:nth-child(4),
+  main td:nth-child(4) {
+    display: none;
+  }
+
+  main .quantity-control {
+    justify-content: center;
+  }
+}

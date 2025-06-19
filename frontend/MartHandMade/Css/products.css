@@ -1,0 +1,211 @@
+/* Định dạng chung cho section */
+section {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hiển thị lỗi và loading */
+section #errorContainer {
+  background-color: #ffeaea;
+  color: #e74c3c;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #e74c3c;
+  display: none;
+}
+
+section #loadingContainer {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #666;
+  display: none;
+}
+
+/* Danh mục */
+section #danhMucContainer {
+  margin-bottom: 40px;
+}
+
+section .danh-muc-heading {
+  font-size: 24px;
+  color: #333;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e74c3c;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section .danh-muc-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background-color: #e74c3c;
+}
+
+/* Grid sản phẩm */
+section .san-pham-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+section .san-pham {
+  position: relative;
+  flex: 0 0 calc(25% - 30px);
+  margin: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: auto; /* Sửa lỗi xung đột kích thước */
+  height: auto; /* Sửa lỗi xung đột kích thước */
+}
+
+section .san-pham:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+section .san-pham img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+section .san-pham-info {
+  padding: 15px 20px; /* Tăng padding cho phần nội dung */
+}
+
+.san-pham p strong {
+  color: #e74c3c;
+  font-size: 16px; /* Điều chỉnh kích thước phù hợp với 4 sản phẩm/hàng */
+}
+
+section .san-pham h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding: 0 15px; /* Thêm padding hai bên */
+  margin: 15px 0 10px; /* Thêm margin trên dưới */
+}
+
+section .san-pham p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  padding: 0 15px; /* Thêm padding hai bên */
+}
+
+section .san-pham p.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 10px;
+  padding: 0 15px; /* Thêm padding hai bên */
+}
+
+/* Nút "Thêm sản phẩm" */
+section .san-pham button {
+  width: calc(100% - 30px); /* Giảm độ rộng và thêm margin */
+  margin: 0 15px 15px; /* Thêm margin hai bên và dưới */
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: none; /* Ẩn ban đầu */
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Hiện nút khi sản phẩm được chọn */
+section .san-pham.active button {
+  display: flex;
+}
+
+/* Hiệu ứng khi hover nút */
+section .san-pham button:hover {
+  background-color: #c0392b;
+}
+
+/* Cart overlay */
+.cart-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+section .san-pham:hover .cart-overlay {
+  opacity: 1;
+}
+
+section .san-pham .cart-overlay button {
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block; /* Đảm bảo nút hiển thị đúng */
+  margin: 0 10px; /* Thêm margin hai bên cho nút */
+  width: auto; /* Đặt lại độ rộng */
+}
+
+section .san-pham .cart-overlay button:hover {
+  background-color: #cc5500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  section .san-pham {
+    flex: 0 0 calc(33.333% - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  section .san-pham {
+    flex: 0 0 calc(50% - 30px);
+  }
+}
+
+@media (max-width: 576px) {
+  section .san-pham {
+    flex: 0 0 calc(100% - 30px);
+  }
+
+  section .san-pham h3,
+  section .san-pham p,
+  section .san-pham p.price {
+    padding: 0 20px; /* Tăng padding trên mobile */
+  }
+}

@@ -1,0 +1,265 @@
+/* Chỉ áp dụng cho .account */
+main .account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+main .account .container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .account .container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Tabs */
+main .auth-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+main .auth-tab {
+  flex: 1;
+  padding: 12px;
+  margin: 0 10px;
+  border: none;
+  background: #e9ecef;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  color: #6c757d;
+  position: relative;
+  overflow: hidden;
+}
+
+main .auth-tab:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: #7fb2d8;
+  transition: all 0.3s ease;
+}
+
+main .auth-tab:hover:before {
+  left: 0;
+}
+
+main .auth-tab.active {
+  background: #dee2e6;
+  color: #343a40;
+}
+
+main .auth-tab.active:before {
+  left: 0;
+}
+
+/* Form Content */
+main .auth-content {
+  display: flex;
+  flex-direction: column;
+}
+
+main .auth-form {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+main .auth-form.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+main .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+
+main .form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #495057;
+  transition: color 0.3s ease;
+}
+
+main .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #f8f9fa;
+  color: #495057;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .form-group input:focus {
+  outline: none;
+  border-color: #7fb2d8;
+  box-shadow: 0 0 0 3px rgba(127, 178, 216, 0.25);
+}
+
+main .form-group:hover label {
+  color: #7fb2d8;
+}
+
+/* Buttons */
+main .auth-button {
+  width: 100%;
+  padding: 14px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+main .auth-button:hover {
+  background: #7fb2d8;
+}
+
+main .auth-button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+
+main .auth-button:active:before {
+  width: 300px;
+  height: 300px;
+}
+
+main .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+main .remember-forgot a {
+  color: #7fb2d8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+main .remember-forgot a:hover {
+  color: #5a93bd;
+  text-decoration: underline;
+}
+
+/* Social Login */
+main .social-login {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+main .social-login h4 {
+  margin-bottom: 15px;
+  color: #495057;
+}
+
+main .social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+main .social-button {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main .social-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+main .facebook {
+  background: #3b5998;
+  color: white;
+}
+
+main .facebook:hover {
+  background: #344e86;
+}
+
+main .google {
+  background: #db4437;
+  color: white;
+}
+
+main .google:hover {
+  background: #c53929;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  main .account .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  main .auth-tab {
+    font-size: 14px;
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  main .form-group input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  main .auth-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  main .social-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

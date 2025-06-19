@@ -1,0 +1,248 @@
+/* Chỉ áp dụng CSS cho product-detail-container mà không ảnh hưởng đến header và footer */
+.product-detail-container {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.product-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.product-info h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 16px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.product-info #product-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.product-info button {
+  padding: 10px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-info button:hover {
+  background-color: #c0392b;
+}
+
+/* Hình ảnh sản phẩm */
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  width: 400px;
+}
+
+/* Nút chia sẻ */
+.share-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.share-icons button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.share-icons button i {
+  font-size: 18px;
+}
+
+.share-icons button:nth-child(1) {
+  background-color: #3b5998; /* Facebook */
+}
+
+.share-icons button:nth-child(2) {
+  background-color: #1da1f2; /* Twitter */
+}
+
+.share-icons button:nth-child(3) {
+  background-color: #e1306c; /* Instagram */
+}
+
+.share-icons button:hover {
+  opacity: 0.8;
+}
+
+/*Đánh giá */
+.reviews-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.reviews-summary {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+#average-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stars-container {
+  color: #ffc107;
+  font-size: 20px;
+}
+
+#total-reviews {
+  font-size: 16px;
+  color: #666;
+}
+
+.reviews-slider-container {
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.reviews-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px;
+}
+
+.review-card {
+  flex: 0 0 calc(33.333% - 14px);
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-weight: bold;
+}
+
+.review-date {
+  color: #888;
+  font-size: 14px;
+}
+
+.review-stars {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.review-comment {
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-arrow.prev {
+  left: 0;
+}
+
+.slider-arrow.next {
+  right: 0;
+}
+
+.reviews-loading {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+@media (max-width: 992px) {
+  .review-card {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .review-card {
+    flex: 0 0 100%;
+  }
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-info {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .product-info button {
+    width: 100%;
+  }
+
+  .share-icons {
+    justify-content: center;
+  }
+}

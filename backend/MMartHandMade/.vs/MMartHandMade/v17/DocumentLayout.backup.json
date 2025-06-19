@@ -1,0 +1,265 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\quanlycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\quanlycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\hotrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\hotrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\danhmucsanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\danhmucsanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\danhgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\danhgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\dangnhapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\dangnhapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\dangkycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\dangkycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\controllers\\baocaothongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\controllers\\baocaothongkecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\models\\marthandmadecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\models\\marthandmadecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\mmarthandmade.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\mmarthandmade.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|c:\\users\\duy anh\\documents\\handmademart\\backend\\mmarthandmade\\mmarthandmade\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5974D8FF-7AA9-4D88-93D3-79FEB09689E6}|MMartHandMade\\MMartHandMade.csproj|solutionrelative:mmarthandmade\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaiKhoanController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\TaiKhoanController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\TaiKhoanController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\TaiKhoanController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\TaiKhoanController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:48:25.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KhachHangController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\KhachHangController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\KhachHangController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\KhachHangController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\KhachHangController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:48:02.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanLyController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\QuanLyController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\QuanLyController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\QuanLyController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\QuanLyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:48:14.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\SanPhamController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\SanPhamController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:48:19.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HoTroController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\HoTroController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\HoTroController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\HoTroController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\HoTroController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAUwHMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T06:01:12.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DonHangController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DonHangController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\DonHangController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DonHangController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\DonHangController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:47:55.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DanhMucSanPhamController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DanhMucSanPhamController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\DanhMucSanPhamController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DanhMucSanPhamController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\DanhMucSanPhamController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:47:40.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DanhGiaController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DanhGiaController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\DanhGiaController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DanhGiaController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\DanhGiaController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAIwKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:47:35.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DangNhapController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DangNhapController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\DangNhapController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DangNhapController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\DangNhapController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:47:29.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DangKyController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DangKyController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\DangKyController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\DangKyController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\DangKyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:47:23.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaoCaoThongKeController.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\BaoCaoThongKeController.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Controllers\\BaoCaoThongKeController.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Controllers\\BaoCaoThongKeController.cs",
+              "RelativeToolTip": "MMartHandMade\\Controllers\\BaoCaoThongKeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:45:24.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Program.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Program.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Program.cs",
+              "RelativeToolTip": "MMartHandMade\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:32:00.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MartHandMadeContext.cs",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Models\\MartHandMadeContext.cs",
+              "RelativeDocumentMoniker": "MMartHandMade\\Models\\MartHandMadeContext.cs",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\Models\\MartHandMadeContext.cs",
+              "RelativeToolTip": "MMartHandMade\\Models\\MartHandMadeContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:40:57.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MMartHandMade.http",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\MMartHandMade.http",
+              "RelativeDocumentMoniker": "MMartHandMade\\MMartHandMade.http",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\MMartHandMade.http",
+              "RelativeToolTip": "MMartHandMade\\MMartHandMade.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-05T05:35:19.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\appsettings.json",
+              "RelativeDocumentMoniker": "MMartHandMade\\appsettings.json",
+              "ToolTip": "C:\\Users\\Duy Anh\\Documents\\HandMadeMart\\backend\\MMartHandMade\\MMartHandMade\\appsettings.json",
+              "RelativeToolTip": "MMartHandMade\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-05T05:29:53.873Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
