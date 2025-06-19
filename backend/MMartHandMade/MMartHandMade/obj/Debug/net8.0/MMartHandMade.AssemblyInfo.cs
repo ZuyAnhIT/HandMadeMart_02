@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MMartHandMade")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cecaceab562fda160ddf5ad2a3a9284360211a21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4abd6a8933b0994ae05963e84d6d101af08624ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("MMartHandMade")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MMartHandMade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

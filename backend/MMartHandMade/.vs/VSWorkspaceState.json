@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MMartHandMade\\bin"
+    "\\MMartHandMade",
+    "\\MMartHandMade\\Controllers"
   ],
-  "SelectedNode": "\\MMartHandMade.sln",
+  "SelectedNode": "\\MMartHandMade\\MMartHandMade.csproj",
   "PreviewInSolutionExplorer": false
 }
